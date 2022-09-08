@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="player.css" rel="stylesheet" type="text/css" />
+    <title>LAU MUSIC</title>
+    <link rel="shortcut icon" href="./Imagenes/Icono.jpg">
+  </head>
+  <body>
+    <div class="container">
+      <span style="--l: 'L';">L</span>
+      <span style="--l: 'A';">A</span>
+      <span style="--l: 'U';">U</span>
+      <span style="--l: 'M';">M</span>
+      <span style="--l: 'U';">U</span>
+      <span style="--l: 'S';">S</span>
+      <span style="--l: 'I';">I</span>
+      <span style="--l: 'C';">C</span>
+    </div>
+    <div class="player">
+      <div class="player__header">
+        <div class="player__img player__img--absolute slider">
+          <button class="player__button player__button--absolute--nw playlist">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/playlist.svg"
+              alt="playlist-icon"
+            />
+          </button>
+        </button>
+      <button class="player__button player__button--absolute--center play">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/play.svg"
+              alt="play-icon"
+            />
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/pause.svg"
+              alt="pause-icon"
+            />
+          </button>
+          <div class="slider__content">
+            <img
+              class="img slider__img"
+              src="./Imagenes/Dayglow.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="./Imagenes/Dawn of victory.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="./Imagenes/leo rizzi.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="./Imagenes/Patienece.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="./Imagenes/taylor swift.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="./Imagenes/Dua lipa.jpg"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="./Imagenes/Another love.webp"
+              alt="cover"
+            />
+            <img
+              class="img slider__img"
+              src="./Imagenes/./Los inquietos.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/Alex Zurdo.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/papiwilo.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/paulo londra.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/Mana.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/Cypher 4 BTS.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/alessia cara.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/Dramaturgy eve.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/sinfonia.jpg"
+              alt="cover"
+              />
+              <img
+              class="img slider__img"
+              src="./Imagenes/They living tombstone.jpg"
+              alt="cover"
+              />
+          </div>
+        </div>
+
+        <div class="player__controls">
+          <button class="player__button back">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/next.svg"
+              alt="back-icon"
+            />
+          </button>
+          <p class="player__context slider__context">
+            <strong class="slider__name"></strong>
+            <span class="player__title slider__title"></span>
+          </p>
+          <button class="player__button next">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/next.svg"
+              alt="next-icon"
+            />
+          </button>
+          <div class="progres">
+            <div class="progres__filled"></div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="player__playlist list">
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="./Imagenes/Dayglow.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Can I Call You Tonight</b>
+            <span class="flex">
+              <span class="player__title">Dayglow</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./canciones/Dayglow - Can I Call You Tonight [ Sub.Español  video official ].mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="./Imagenes/Dawn of victory.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Dawn Of Victory</b>
+            <span class="flex">
+              <span class="player__title">Rhapsody of Fire</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./canciones/Rhapsody (of Fire) - Dawn of Victory.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="./Imagenes/leo rizzi.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">La Vida Es Un cuadro</b>
+            <span class="flex">
+              <span class="player__title">Leo Rizzi</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./canciones/La vida es un cuadro.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="/Imagenes/Patienece.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Patience</b>
+            <span class="flex">
+              <span class="player__title">Guns N Roses</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./canciones/Guns N Roses - Patience ( Subtitulada al Español ).mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="./Imagenes/taylor swift.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Don't Blame Me</b>
+            <span class="flex">
+              <span class="player__title">Taylor swift</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./canciones/- Dont Blame Me.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="./Imagenes/Dua lipa.jpg"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">No Lie</b>
+            <span class="flex">
+              <span class="player__title">Dua Lipa</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="././canciones/y2mate.com - Sean Paul Dua Lipa  No Lie.mp3"
+          ></audio>
+        </li>
+        <li class="player__song">
+          <img
+            class="player__img img"
+            src="./Imagenes/Another love.webp"
+            alt="cover"
+          />
+          <p class="player__context">
+            <b class="player__song-name">Another love</b>
+            <span class="flex">
+              <span class="player__title">Tom Odell</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./canciones/tom-odell-another-love-slowed-down.mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/Los inquietos.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Mi Dule Amor</b>
+              <span class="flex">
+                <span class="player__title">Los Inquietos</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/Los Inquietos Del Vallenato - Mi Dulce Amor  Audio.mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/Alex Zurdo.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Uno</b>
+              <span class="flex">
+                <span class="player__title">Alex Zurdo</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/UNO  Redimi2 x Alex Zurdo x Funky Ft. Almighty, Christian Ponce, Ander Bock (Video Lyric).mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/papiwilo.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">MI historia</b>
+              <span class="flex">
+                <span class="player__title">Papi Wilo</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/Papi Wilo Mi Historia.mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/paulo londra.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Adan Y Eva</b>
+              <span class="flex">
+                <span class="player__title">Paulo Londra</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/Paulo Londra - Adan y Eva (Official Video).mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/Mana.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Labios Compartidos</b>
+              <span class="flex">
+                <span class="player__title">Mana</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/Mana - Labios Compartidos (Video Oficial).mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/Cypher 4 BTS.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Cypher 4 BTS</b>
+              <span class="flex">
+                <span class="player__title">BTS</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/BTS Cypher 4.mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/alessia cara.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Out of love</b>
+              <span class="flex">
+                <span class="player__title">Alessia Cara</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/alessia-cara-out-of-love-traducida-al-espanol.mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/Dramaturgy eve.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Dramaturgy</b>
+              <span class="flex">
+                <span class="player__title">EVE Mv</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/Dramaturgy Live Film ver. (ドラマツルギー)  Eve Mv  Traducida al español.mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/sinfonia.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">Sinfonia Del nuevo Mundo</b>
+              <span class="flex">
+                <span class="player__title">Dvorak</span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/La Sinfonia del Nuevo Mundo Dvorak.mp3"
+            ></audio>
+          </li>
+          <li class="player__song">
+            <img
+              class="player__img img"
+              src="./Imagenes/They living tombstone.jpg"
+              alt="cover"
+            />
+            <p class="player__context">
+              <b class="player__song-name">They living tombstone</b>
+              <span class="flex">
+                <span class="player__title">MY Ordinary life </span>
+                <span class="player__song-time"></span>
+              </span>
+            </p>
+            <audio
+              class="audio"
+              src="./canciones/The Living Tombstone - My Ordinary Life  Sub Español  Inglés.mp3"
+            ></audio>
+
+
+
+
+        </li>
+      </ul>
+    </div>
+    <script src="/player.js"></script>
+  </body>
+</html>
